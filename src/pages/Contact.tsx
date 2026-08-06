@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder"
 import { Check, Mail, MapPin, Phone } from "lucide-react"
 import { motion } from "framer-motion"
+import { SEO } from "@/components/SEO"
 
 export function Contact() {
   const { t } = useLanguage()
@@ -13,6 +14,7 @@ export function Contact() {
 
   return (
     <div>
+      <SEO title={t.nav.contact} url="https://excal-group.com/contact" />
       <section className="mx-auto max-w-[1200px] px-5 pb-10 pt-[72px] sm:px-9 md:px-[72px]">
         <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.nav.contact}</h6>
         <h1 className="mb-4 font-heading text-4xl font-extrabold md:text-5xl">{t.contact.title}</h1>
@@ -42,8 +44,17 @@ export function Contact() {
               <p className="m-0 text-[15px]"><a href="mailto:office@excal-group.com" className="text-ink hover:text-accent">office@excal-group.com</a></p>
             </div>
           </div>
-          <div className="mt-6 grayscale contrast-[1.08]">
-            <PhotoPlaceholder label={t.labels.mapPlaceholder} />
+          <div className="mt-6 overflow-hidden shadow-xl rounded-sm">
+            <iframe 
+              width="100%" 
+              height="300" 
+              style={{ border: 0 }} 
+              loading="lazy" 
+              allowFullScreen 
+              referrerPolicy="no-referrer-when-downgrade" 
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=str.%20Eminescu%2070,%20Chi%C8%99in%C4%83u,%20Moldova&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              title="Excal Group Office Location"
+            ></iframe>
           </div>
         </div>
 

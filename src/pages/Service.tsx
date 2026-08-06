@@ -4,7 +4,8 @@ import { SERVICE_IDS, SVC, ServiceId } from "@/data/content"
 import { ICONS } from "@/data/icons"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
-import { Check } from "lucide-react"
+import { Check, ArrowRight } from "lucide-react"
+import { SEO } from "@/components/SEO"
 
 export function Service() {
   const { id } = useParams<{ id: string }>()
@@ -20,7 +21,12 @@ export function Service() {
 
   return (
     <div>
-      <section className="mx-auto max-w-[1200px] px-5 pb-2 pt-14 sm:px-9 md:px-[72px]">
+      <SEO
+        title={current.title}
+        description={current.summary}
+        url={`https://excal-group.com/services/${id}`}
+      />
+      <section className="mx-auto max-w-[1200px] px-5 pb-10 pt-[72px] sm:px-9 md:px-[72px]">
         <p className="mb-5 text-[13px] text-ink/60">
           <Link to="/" className="text-inherit hover:text-accent">{t.nav.home}</Link> / {t.nav.services} / <span className="text-ink">{current.title}</span>
         </p>
@@ -49,16 +55,27 @@ export function Service() {
 
       <section className="mx-auto max-w-[1200px] border-t-2 border-divider px-5 pb-16 pt-4 sm:px-9 md:px-[72px]">
         <h6 className="my-6 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.labels.otherServicesKicker}</h6>
-        <div className="grid grid-cols-1 gap-[2px] border-2 border-divider bg-divider sm:grid-cols-2 lg:grid-cols-3">
-          {others.map((oid) => (
-            <Link
-              key={oid}
-              to={`/services/${oid}`}
-              className="flex items-center gap-1.5 bg-bg px-5 py-4.5 text-sm font-semibold text-ink hover:bg-surface hover:text-accent"
-            >
-              {svc[oid].title}
-            </Link>
-          ))}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {others.map((oid) => {
+            const OtherIcon = ICONS[oid]
+            return (
+              <Link
+                key={oid}
+                to={`/services/${oid}`}
+                className="group flex flex-col items-start gap-4 border-2 border-divider bg-bg px-6 py-5 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-lg"
+              >
+                <div className="rounded-full bg-surface p-3 text-accent transition-transform group-hover:scale-110">
+                  <OtherIcon size={24} strokeWidth={1.8} />
+                </div>
+                <span className="text-[16px] font-bold text-ink group-hover:text-accent">
+                  {svc[oid].title}
+                </span>
+                <span className="mt-auto inline-flex items-center gap-1.5 text-[13px] font-bold text-accent opacity-80 transition-all group-hover:translate-x-1 group-hover:opacity-100">
+                  {t.labels.learnMore} <ArrowRight size={14} strokeWidth={2.2} />
+                </span>
+              </Link>
+            )
+          })}
         </div>
       </section>
 

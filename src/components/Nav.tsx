@@ -22,7 +22,7 @@ export function Nav() {
   return (
     <nav className="sticky top-0 z-50 flex flex-wrap items-center gap-x-7 gap-y-4 border-b-2 border-divider bg-bg px-5 py-3.5 sm:px-9 md:px-[72px]">
       <Link to="/" className="mr-auto flex items-center">
-        <img src="/logo.png" alt="Excal Group" className="h-9" />
+        <img src="/logo.png" alt="Excal Group" className="h-12" />
       </Link>
       <NavLink to="/" end className={linkCls}>{t.nav.home}</NavLink>
       <NavLink to="/about" className={linkCls}>{t.nav.about}</NavLink>

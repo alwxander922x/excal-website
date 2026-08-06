@@ -1,4 +1,4 @@
-import { Briefcase, Code2, Globe, Server, Network, Headphones, Users2, LucideIcon } from "lucide-react"
+import { Briefcase, Code2, Globe, Server, Network, Headphones, Users2, ShieldCheck, Cloud, LucideIcon } from "lucide-react"
 import { ServiceId } from "@/data/content"
 
 export const ICONS: Record<ServiceId, LucideIcon> = {
@@ -9,4 +9,6 @@ export const ICONS: Record<ServiceId, LucideIcon> = {
   infrastructure: Network,
   callcenter: Headphones,
   staffing: Users2,
+  cybersecurity: ShieldCheck,
+  cloud: Cloud,
 }

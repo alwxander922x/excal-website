@@ -3,6 +3,7 @@ import { useLanguage } from "@/context/LanguageContext"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder"
+import { SEO } from "@/components/SEO"
 
 export function About() {
   const { t } = useLanguage()
@@ -10,6 +11,7 @@ export function About() {
 
   return (
     <div>
+      <SEO title={t.nav.about} url="https://excal-group.com/about" />
       <section className="mx-auto max-w-[1200px] px-5 pb-10 pt-[72px] sm:px-9 md:px-[72px]">
         <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.nav.about}</h6>
         <h1 className="mb-5 font-heading text-4xl font-extrabold md:text-5xl">{t.about.title}</h1>
@@ -37,8 +39,12 @@ export function About() {
           <p className="mb-5 max-w-[56ch] text-[15.5px] leading-relaxed text-ink/80">{t.about.whatWeDo}</p>
           <Button variant="secondary" onClick={() => navigate("/")}>{t.nav.services}</Button>
         </div>
-        <div className="grayscale contrast-[1.08]">
-          <PhotoPlaceholder label={t.labels.photoPlaceholder} />
+        <div className="overflow-hidden shadow-xl rounded-sm">
+          <img 
+            src="/company_photo.webp" 
+            alt="Company Team" 
+            className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105" 
+          />
         </div>
       </Reveal>
 
