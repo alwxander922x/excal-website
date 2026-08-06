@@ -18,24 +18,24 @@ export function SEO({
   url = 'https://excal-group.com', 
   type = 'website' 
 }: SEOProps) {
-  const { language } = useLanguage();
-  
+  const { lang } = useLanguage();
+
   // Default fallbacks based on language
-  const defaultTitle = language === 'ru' 
-    ? 'Excal Group — ИТ Консалтинг и Аутсорсинг' 
-    : language === 'ro' 
-      ? 'Excal Group — Consultanță IT & Externalizare' 
+  const defaultTitle = lang === 'ru'
+    ? 'Excal Group — ИТ Консалтинг и Аутсорсинг'
+    : lang === 'ro'
+      ? 'Excal Group — Consultanță IT & Externalizare'
       : 'Excal Group — IT Consulting & Outsourcing';
-      
-  const defaultDesc = language === 'ru'
+
+  const defaultDesc = lang === 'ru'
     ? 'Excal Group предлагает ИТ-консалтинг, разработку программного обеспечения, веб-порталы, хостинг, управление инфраструктурой и аутсорсинг персонала.'
-    : language === 'ro'
+    : lang === 'ro'
       ? 'Excal Group oferă consultanță IT, dezvoltare software, portaluri web, hosting, management de infrastructură și servicii de externalizare a personalului.'
       : 'Excal Group offers IT consulting, custom software development, web portals, hosting, infrastructure management, call center and staffing services.';
 
-  const defaultKeywords = language === 'ru'
+  const defaultKeywords = lang === 'ru'
     ? 'ИТ консалтинг, разработка по, аутсорсинг персонала, хостинг, кибербезопасность'
-    : language === 'ro'
+    : lang === 'ro'
       ? 'consultanță IT, dezvoltare software, externalizare personal, hosting, securitate cibernetică'
       : 'IT consulting, software development, staff outsourcing, hosting, cybersecurity';
 
@@ -45,7 +45,7 @@ export function SEO({
   const siteUrl = url; // In a real app, this might use window.location.href
 
   return (
-    <Helmet htmlAttributes={{ lang: language }}>
+    <Helmet htmlAttributes={{ lang }}>
       {/* Standard SEO */}
       <title>{siteTitle}</title>
       <meta name="description" content={siteDesc} />
