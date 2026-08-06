@@ -39,17 +39,17 @@ export function Home() {
             className="absolute left-[40%] top-[30%] -z-10 h-[350px] w-[350px] rounded-full bg-purple-400 opacity-[0.12] blur-[100px] mix-blend-multiply"
           />
 
-          {/* Floating Code Snippets (Run away on hover) */}
-          <div className="absolute inset-0 z-10 pointer-events-auto">
-            <motion.div 
+          {/* Floating Code Snippets (Run away on hover) — hidden on mobile to avoid clutter/overlap */}
+          <div className="absolute inset-0 z-10 pointer-events-none hidden md:pointer-events-auto md:block">
+            <motion.div
               animate={{ y: [0, -30, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ x: -150, y: -100, opacity: 0, rotate: -20, scale: 0.5 }}
               className="absolute left-[10%] top-[20%] font-mono text-[15px] font-bold text-accent/50 cursor-default select-none p-4"
             >
               {`const init = () => {`}
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               animate={{ y: [0, 40, 0] }} transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ x: 150, y: 100, opacity: 0, rotate: 20, scale: 0.5 }}
               className="absolute right-[15%] top-[25%] font-mono text-[15px] font-bold text-blue-500/40 cursor-default select-none p-4"
@@ -57,7 +57,7 @@ export function Home() {
               {`<AppProvider>`}
             </motion.div>
 
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -20, 0] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ x: 100, y: -150, opacity: 0, rotate: 45, scale: 0.5 }}
               className="absolute left-[40%] bottom-[20%] font-mono text-[15px] font-bold text-purple-500/40 cursor-default select-none p-4"
@@ -65,7 +65,7 @@ export function Home() {
               {`await fetch('/api/data')`}
             </motion.div>
 
-            <motion.div 
+            <motion.div
               animate={{ y: [0, 25, 0] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ x: -100, y: 150, opacity: 0, rotate: -45, scale: 0.5 }}
               className="absolute right-[30%] bottom-[30%] font-mono text-[15px] font-bold text-ink/30 cursor-default select-none p-4"
@@ -73,7 +73,7 @@ export function Home() {
               {`export default function`}
             </motion.div>
 
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -35, 0] }} transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ x: 200, y: 0, opacity: 0, rotate: 90, scale: 0.5 }}
               className="absolute left-[20%] top-[60%] font-mono text-[15px] font-bold text-accent/40 cursor-default select-none p-4"
