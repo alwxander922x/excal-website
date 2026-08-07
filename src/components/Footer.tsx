@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="mt-6 border-t-2 border-divider">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-5 py-14 sm:px-9 md:grid-cols-4 md:px-[72px]">
         <div>
-          <img src="/logo.png" alt="Excal Group" className="mb-3.5 h-8" />
+          <img src="/logo.png" alt="Excal Group" className="mb-3.5 h-8 dark:invert" />
           <p className="max-w-[30ch] text-[13.5px] leading-relaxed text-ink/70">{t.footer.blurb}</p>
         </div>
         <div>

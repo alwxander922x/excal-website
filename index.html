@@ -7,6 +7,15 @@
 <meta name="description" content="Excal Group — IT consulting, custom software development, web portals, hosting, infrastructure management, call center and staffing services." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet" />
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("excal_theme");
+    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (dark) document.documentElement.classList.add("dark");
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 <div id="root"></div>

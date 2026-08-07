@@ -7,8 +7,11 @@ import { ICONS } from "@/data/icons"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
 import { Marquee } from "@/components/Marquee"
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder"
 import { SEO } from "@/components/SEO"
+import { Counter } from "@/components/Counter"
+import { Globe } from "@/components/Globe"
+import { Accordion } from "@/components/Accordion"
+import { Testimonials } from "@/components/Testimonials"
 
 export function Home() {
   const { lang, t } = useLanguage()
@@ -129,6 +132,40 @@ export function Home() {
 
       <Marquee />
 
+      {/* Stats */}
+      <section className="mx-auto max-w-[1200px] px-5 pb-4 pt-16 sm:px-9 md:px-[72px]">
+        <Reveal>
+          <h6 className="mb-8 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.stats.kicker}</h6>
+        </Reveal>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 border-t-2 border-divider pt-9 lg:grid-cols-4">
+          {t.stats.items.map((s, i) => (
+            <Reveal key={i} delay={i * 0.08}>
+              <p className="m-0 font-heading text-[40px] font-extrabold leading-none text-accent md:text-[56px]">
+                <Counter value={s.value} suffix={s.suffix} />
+              </p>
+              <p className="m-0 mt-3 max-w-[18ch] text-[13.5px] leading-snug text-ink/70">{s.label}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Globe / global reach — dark, space-like in dark theme; clean and light in light theme */}
+      <section className="relative overflow-hidden bg-bg transition-colors duration-300">
+        <div className="absolute inset-y-0 right-0 w-full md:w-[62%]">
+          <Globe />
+        </div>
+        <div className="relative mx-auto grid min-h-[560px] max-w-[1200px] grid-cols-1 items-center px-5 py-24 sm:px-9 md:min-h-[680px] md:grid-cols-[6fr_5fr] md:px-[72px]">
+          <Reveal>
+            <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.globe.kicker}</h6>
+            <h2 className="mb-5 max-w-[16ch] font-heading text-[32px] font-extrabold leading-[1.08] text-ink md:text-[46px]">{t.globe.title}</h2>
+            <p className="m-0 max-w-[46ch] text-[15.5px] leading-relaxed text-ink/70">{t.globe.body}</p>
+            <div className="mt-8">
+              <Button onClick={() => navigate("/contact")}>{t.cta.button}</Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-[1200px] px-5 py-16 sm:px-9 md:px-[72px]">
         <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.labels.servicesKicker}</h6>
         <h2 className="mb-9 font-heading text-[34px] font-extrabold">{t.labels.servicesTitle}</h2>
@@ -187,6 +224,31 @@ export function Home() {
           <Button variant="secondary" onClick={() => navigate("/about")}>{t.labels.moreAboutUs}</Button>
         </div>
       </Reveal>
+
+      {/* Testimonials */}
+      <section className="border-y-2 border-divider bg-surface/40 px-5 py-20 sm:px-9 md:px-[72px]">
+        <div className="mx-auto max-w-[1200px]">
+          <Reveal>
+            <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.testimonials.kicker}</h6>
+            <h2 className="mb-10 max-w-[24ch] font-heading text-[30px] font-extrabold leading-[1.12] md:text-[42px]">{t.testimonials.title}</h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Testimonials items={t.testimonials.items} />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 px-5 py-20 sm:px-9 md:grid-cols-[4fr_7fr] md:gap-16 md:px-[72px]">
+        <Reveal>
+          <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.faq.kicker}</h6>
+          <h2 className="mb-4 font-heading text-[30px] font-extrabold leading-[1.12] md:text-[38px]">{t.faq.title}</h2>
+          <p className="m-0 max-w-[38ch] text-[15px] leading-relaxed text-ink/70">{t.faq.intro}</p>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <Accordion items={t.faq.items} />
+        </Reveal>
+      </section>
 
       <section className="bg-accent px-5 py-14 text-bg sm:px-9 md:px-[72px]">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-6">

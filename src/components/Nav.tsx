@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { Link, NavLink, useNavigate } from "react-router-dom"
 import { useLanguage } from "@/context/LanguageContext"
+import { useTheme } from "@/context/ThemeContext"
 import { SERVICE_IDS, SVC, Lang } from "@/data/content"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { ChevronDown, Menu, X, Sun, Moon } from "lucide-react"
 
 const LANGS: { code: Lang; label: string }[] = [
   { code: "en", label: "EN" },
@@ -12,6 +13,7 @@ const LANGS: { code: Lang; label: string }[] = [
 
 export function Nav() {
   const { lang, setLang, t } = useLanguage()
+  const { theme, toggleTheme } = useTheme()
   const svc = SVC[lang]
   const [open, setOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -30,7 +32,7 @@ export function Nav() {
     <nav className="sticky top-0 z-50 border-b-2 border-divider bg-bg px-5 py-3.5 sm:px-9 md:px-[72px]">
       <div className="flex items-center gap-x-7">
         <Link to="/" className="mr-auto flex items-center" onClick={closeMobile}>
-          <img src="/logo.png" alt="Excal Group" className="h-12" />
+          <img src="/logo.png" alt="Excal Group" className="h-12 dark:invert" />
         </Link>
 
         {/* Desktop nav — unchanged */}
@@ -74,6 +76,14 @@ export function Nav() {
               </button>
             ))}
           </div>
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+            className="inline-flex items-center justify-center border border-divider p-1.5 text-ink transition-colors hover:border-accent hover:text-accent"
+          >
+            {theme === "dark" ? <Sun size={15} strokeWidth={2.2} /> : <Moon size={15} strokeWidth={2.2} />}
+          </button>
         </div>
 
         {/* Mobile burger toggle */}
@@ -119,18 +129,29 @@ export function Nav() {
 
           <NavLink to="/contact" className={mobileLinkCls} onClick={closeMobile}>{t.nav.contact}</NavLink>
 
-          <div className="mt-2 flex gap-1.5 border-t-2 border-divider pt-3.5">
-            {LANGS.map((l) => (
-              <button
-                key={l.code}
-                onClick={() => setLang(l.code)}
-                className={`border border-divider px-3 py-1.5 font-heading text-xs font-extrabold ${
-                  l.code === lang ? "bg-accent text-bg" : "bg-transparent text-ink"
-                }`}
-              >
-                {l.label}
-              </button>
-            ))}
+          <div className="mt-2 flex items-center justify-between gap-1.5 border-t-2 border-divider pt-3.5">
+            <div className="flex gap-1.5">
+              {LANGS.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => setLang(l.code)}
+                  className={`border border-divider px-3 py-1.5 font-heading text-xs font-extrabold ${
+                    l.code === lang ? "bg-accent text-bg" : "bg-transparent text-ink"
+                  }`}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </div>
+            <button
+              type="button"
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+              className="inline-flex items-center gap-1.5 border border-divider px-3 py-1.5 text-xs font-bold text-ink"
+            >
+              {theme === "dark" ? <Sun size={14} strokeWidth={2.2} /> : <Moon size={14} strokeWidth={2.2} />}
+              {theme === "dark" ? "Light" : "Dark"}
+            </button>
           </div>
         </div>
       )}

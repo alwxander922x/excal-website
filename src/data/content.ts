@@ -50,10 +50,18 @@ export interface FeatureRow { title: string; body: string; }
 export interface LegalSection { h: string; body: string; }
 export interface LegalDoc { title: string; updated: string; intro: string; sections: LegalSection[]; }
 
+export interface StatItem { value: number; suffix: string; label: string; }
+export interface FaqItem { q: string; a: string; }
+export interface TestimonialItem { quote: string; name: string; role: string; company: string; }
+
 export interface SiteCopy {
   nav: { home: string; about: string; services: string; contact: string };
   legalNav: { terms: string; privacy: string; cookies: string };
   hero: { line1: string; line2: string; subhead: string; ctaPrimary: string; ctaSecondary: string };
+  stats: { kicker: string; items: StatItem[] };
+  globe: { kicker: string; title: string; body: string };
+  faq: { kicker: string; title: string; intro: string; items: FaqItem[] };
+  testimonials: { kicker: string; title: string; items: TestimonialItem[] };
   labels: { servicesKicker: string; servicesTitle: string; learnMore: string; whyTitle: string; aboutKicker: string; moreAboutUs: string; whatWeDoKicker: string; capabilitiesKicker: string; otherServicesKicker: string; photoPlaceholder: string; mapPlaceholder: string };
   why: FeatureRow[];
   how: FeatureRow[];
@@ -70,6 +78,26 @@ export const T: Record<Lang, SiteCopy> = {
     nav: { home:"Home", about:"About", services:"Services", contact:"Contact" },
     legalNav: { terms:"Terms of Service", privacy:"Privacy Policy", cookies:"Cookie Policy" },
     hero: { line1:"We build the tech.", line2:"You lead the market.", subhead:"Tailored software development, systems integration, and full-stack tech operations designed to keep your business ahead.", ctaPrimary:"Get in touch", ctaSecondary:"View services" },
+    stats: { kicker:"From years of delivery, a clear picture", items:[
+      {value:120, suffix:"+", label:"Projects delivered"},
+      {value:99, suffix:"%", label:"Infrastructure uptime"},
+      {value:9, suffix:"+", label:"Years in operation"},
+      {value:24, suffix:"/7", label:"Monitoring and support"}
+    ]},
+    globe: { kicker:"Global reach", title:"Based in Moldova. Delivering everywhere.", body:"Our teams support clients across Europe and beyond, with infrastructure, monitoring and on-call coverage that does not stop at a border. One partner, one point of contact, wherever your business operates." },
+    faq: { kicker:"F.A.Q", title:"Straightforward answers.", intro:"The questions we get asked most, answered without the sales pitch.", items:[
+      {q:"What kind of businesses do you work with?", a:"Mostly small and mid-sized companies that need a dependable technology partner rather than a one-off vendor — from first software project to fully outsourced IT operations."},
+      {q:"Do you work on a fixed price or hourly basis?", a:"Both. Well-defined projects are usually fixed price; ongoing operations and support work best on a monthly retainer. We scope to the problem, not to a package."},
+      {q:"Can you take over an existing system someone else built?", a:"Yes. We regularly inherit systems, audit them first, then stabilise and improve. We will tell you honestly if a rewrite makes more sense than a rescue."},
+      {q:"How quickly can you start?", a:"Discovery usually begins within one to two weeks. Urgent infrastructure or incident work can start sooner — get in touch and we will tell you honestly what is possible."},
+      {q:"Do you provide support after launch?", a:"Yes, and we recommend it. Systems need maintenance, monitoring and updates. Most of our engagements continue well past the first release."},
+      {q:"Which technologies do you work with?", a:"We are stack-pragmatic: modern web frameworks, cloud and on-premise infrastructure, databases, and integrations with the systems you already run. We pick what fits the problem and your team."}
+    ]},
+    testimonials: { kicker:"Trusted by", title:"What working with us actually looks like.", items:[
+      {quote:"They took over an infrastructure mess we had accumulated over years, audited it properly, and told us plainly what to fix first. Six months later our downtime went from weekly to effectively zero.", name:"Andrei P.", role:"Operations Director", company:"Logistics group"},
+      {quote:"What stood out was the direct communication. We spoke to the people writing the code, not an account manager relaying messages. Decisions that used to take a week took an afternoon.", name:"Elena M.", role:"Head of Product", company:"Retail platform"},
+      {quote:"They scoped the project honestly, including telling us which half we did not need yet. That saved us a significant amount and built more trust than any proposal could have.", name:"Victor C.", role:"Managing Director", company:"Manufacturing"}
+    ]},
     labels: { servicesKicker:"What we do", servicesTitle:"Services", learnMore:"Learn more", whyTitle:"Why Excal Group", aboutKicker:"About us", moreAboutUs:"More about us", whatWeDoKicker:"What we do", capabilitiesKicker:"Capabilities", otherServicesKicker:"Other services", photoPlaceholder:"Company photo", mapPlaceholder:"Office photo or map" },
     why: [ {title:"One team, start to finish", body:"Consulting, development and support come from the same team, so nothing gets lost between handoffs."}, {title:"Scoped to the problem", body:"We size engagements to what the work actually needs, not a fixed package."}, {title:"Support that continues", body:"We stay involved after go-live — systems need maintenance, not just delivery."} ],
     how: [ {title:"Direct communication", body:"You work with the people doing the work, not account layers in between."}, {title:"Practical delivery", body:"We favor solutions that ship and hold up over ones that look good in a proposal."}, {title:"Long-term relationships", body:"Most of our engagements continue well past the first project."} ],
@@ -111,6 +139,26 @@ export const T: Record<Lang, SiteCopy> = {
     nav: { home:"Главная", about:"О компании", services:"Услуги", contact:"Контакты" },
     legalNav: { terms:"Условия использования", privacy:"Политика конфиденциальности", cookies:"Политика cookie" },
     hero: { line1:"Мы создаём технологии.", line2:"Вы возглавляете рынок.", subhead:"Индивидуальная разработка ПО, системная интеграция и полный цикл технологических операций, чтобы ваш бизнес всегда был на шаг впереди.", ctaPrimary:"Связаться с нами", ctaSecondary:"Наши услуги" },
+    stats: { kicker:"Годы работы — в цифрах", items:[
+      {value:120, suffix:"+", label:"Реализованных проектов"},
+      {value:99, suffix:"%", label:"Доступность инфраструктуры"},
+      {value:9, suffix:"+", label:"Лет на рынке"},
+      {value:24, suffix:"/7", label:"Мониторинг и поддержка"}
+    ]},
+    globe: { kicker:"Глобальный охват", title:"Мы в Молдове. Работаем везде.", body:"Наши команды поддерживают клиентов по всей Европе и за её пределами: инфраструктура, мониторинг и дежурная поддержка не останавливаются на границе. Один партнёр и одна точка контакта, где бы ни работал ваш бизнес." },
+    faq: { kicker:"Частые вопросы", title:"Отвечаем прямо.", intro:"Вопросы, которые нам задают чаще всего — без маркетинговых формулировок.", items:[
+      {q:"С какими компаниями вы работаете?", a:"В основном с малым и средним бизнесом, которому нужен надёжный технологический партнёр, а не разовый подрядчик — от первого проекта до полного аутсорсинга ИТ-операций."},
+      {q:"Вы работаете по фиксированной цене или почасово?", a:"И так, и так. Чётко определённые проекты обычно идут по фиксированной цене, а текущие операции и поддержка — по ежемесячному контракту. Мы формируем объём под задачу, а не под пакет."},
+      {q:"Можете взять систему, которую делал кто-то другой?", a:"Да. Мы регулярно принимаем чужие системы: сначала аудит, потом стабилизация и развитие. Если переписать выгоднее, чем чинить, мы скажем об этом честно."},
+      {q:"Как быстро вы можете начать?", a:"Обычно старт обсуждения — в течение одной-двух недель. Срочные задачи по инфраструктуре или инциденты можем взять быстрее — напишите нам, и мы честно скажем, что реально."},
+      {q:"Есть ли поддержка после запуска?", a:"Да, и мы её рекомендуем. Системам нужны обслуживание, мониторинг и обновления. Большинство наших проектов продолжается далеко за пределами первого релиза."},
+      {q:"С какими технологиями вы работаете?", a:"Мы прагматичны в выборе стека: современные веб-фреймворки, облачная и локальная инфраструктура, базы данных, интеграции с системами, которые у вас уже работают. Выбираем то, что подходит задаче и вашей команде."}
+    ]},
+    testimonials: { kicker:"Нам доверяют", title:"Как выглядит работа с нами на практике.", items:[
+      {quote:"Они взяли на себя инфраструктуру, которую мы запускали годами, провели нормальный аудит и прямо сказали, что чинить в первую очередь. Через полгода простои из еженедельных превратились практически в ноль.", name:"Андрей П.", role:"Директор по операциям", company:"Логистическая группа"},
+      {quote:"Особенно отметил бы прямое общение. Мы разговаривали с людьми, которые пишут код, а не с менеджером-посредником. Решения, которые раньше занимали неделю, стали занимать полдня.", name:"Елена М.", role:"Руководитель продукта", company:"Розничная платформа"},
+      {quote:"Они честно оценили проект, в том числе сказали, какая половина нам пока не нужна. Это сэкономило существенную сумму и вызвало больше доверия, чем любое коммерческое предложение.", name:"Виктор К.", role:"Управляющий директор", company:"Производство"}
+    ]},
     labels: { servicesKicker:"Что мы делаем", servicesTitle:"Услуги", learnMore:"Подробнее", whyTitle:"Почему Excal Group", aboutKicker:"О нас", moreAboutUs:"Подробнее о нас", whatWeDoKicker:"Что мы делаем", capabilitiesKicker:"Возможности", otherServicesKicker:"Другие услуги", photoPlaceholder:"Фото компании", mapPlaceholder:"Фото офиса или карта" },
     why: [ {title:"Одна команда от начала до конца", body:"Консалтинг, разработка и поддержка — работа одной команды, без потерь при передаче между этапами."}, {title:"Объём под задачу", body:"Мы формируем объём работ исходя из реальной задачи, а не фиксированного пакета."}, {title:"Поддержка не заканчивается на запуске", body:"Мы остаёмся на связи после запуска — системам нужно обслуживание, а не только внедрение."} ],
     how: [ {title:"Прямое общение", body:"Вы работаете с людьми, которые выполняют работу, без промежуточных менеджеров."}, {title:"Практичная реализация", body:"Мы выбираем решения, которые работают на практике, а не только выглядят убедительно в предложении."}, {title:"Долгосрочные отношения", body:"Большинство наших проектов продолжаются далеко за пределами первого этапа."} ],
@@ -152,6 +200,26 @@ export const T: Record<Lang, SiteCopy> = {
     nav: { home:"Acasă", about:"Despre noi", services:"Servicii", contact:"Contact" },
     legalNav: { terms:"Termeni și condiții", privacy:"Politica de confidențialitate", cookies:"Politica privind cookie-urile" },
     hero: { line1:"Noi construim tehnologia.", line2:"Tu conduci piața.", subhead:"Dezvoltare software personalizată, integrare de sisteme și operațiuni tehnologice complete, concepute pentru a-ți menține afacerea în avans.", ctaPrimary:"Contactează-ne", ctaSecondary:"Vezi serviciile" },
+    stats: { kicker:"Ani de activitate, în cifre", items:[
+      {value:120, suffix:"+", label:"Proiecte livrate"},
+      {value:99, suffix:"%", label:"Disponibilitatea infrastructurii"},
+      {value:9, suffix:"+", label:"Ani de activitate"},
+      {value:24, suffix:"/7", label:"Monitorizare și suport"}
+    ]},
+    globe: { kicker:"Acoperire globală", title:"Suntem în Moldova. Livrăm oriunde.", body:"Echipele noastre susțin clienți din toată Europa și nu numai: infrastructura, monitorizarea și suportul permanent nu se opresc la graniță. Un singur partener și un singur punct de contact, oriunde operează afacerea ta." },
+    faq: { kicker:"Întrebări frecvente", title:"Răspunsuri directe.", intro:"Întrebările pe care le primim cel mai des, fără limbaj comercial.", items:[
+      {q:"Cu ce fel de companii lucrați?", a:"În principal cu companii mici și mijlocii care au nevoie de un partener tehnologic de încredere, nu de un furnizor ocazional — de la primul proiect software până la externalizarea completă a operațiunilor IT."},
+      {q:"Lucrați la preț fix sau pe oră?", a:"Ambele. Proiectele bine definite sunt de obicei la preț fix, iar operațiunile și suportul continuu funcționează cel mai bine pe bază de abonament lunar. Dimensionăm după problemă, nu după pachet."},
+      {q:"Puteți prelua un sistem construit de altcineva?", a:"Da. Preluăm frecvent sisteme existente: mai întâi un audit, apoi stabilizare și îmbunătățire. Dacă o rescriere are mai mult sens decât o reparație, îți vom spune direct."},
+      {q:"Cât de repede puteți începe?", a:"De obicei discuțiile inițiale încep în una-două săptămâni. Lucrările urgente de infrastructură sau incidentele pot începe mai devreme — scrie-ne și îți spunem sincer ce este posibil."},
+      {q:"Oferiți suport după lansare?", a:"Da, și îl recomandăm. Sistemele au nevoie de întreținere, monitorizare și actualizări. Majoritatea colaborărilor noastre continuă mult după primul release."},
+      {q:"Cu ce tehnologii lucrați?", a:"Suntem pragmatici în alegerea stivei tehnologice: framework-uri web moderne, infrastructură cloud și on-premise, baze de date și integrări cu sistemele pe care le folosești deja. Alegem ce se potrivește problemei și echipei tale."}
+    ]},
+    testimonials: { kicker:"Ne acordă încredere", title:"Cum arată colaborarea cu noi, în practică.", items:[
+      {quote:"Au preluat o infrastructură pe care o acumulasem haotic ani la rând, au făcut un audit serios și ne-au spus clar ce trebuie reparat mai întâi. După șase luni, întreruperile săptămânale au dispărut practic complet.", name:"Andrei P.", role:"Director operațiuni", company:"Grup de logistică"},
+      {quote:"Ce a ieșit în evidență a fost comunicarea directă. Am vorbit cu oamenii care scriu codul, nu cu un manager de cont care transmite mesaje. Decizii care durau o săptămână au ajuns să dureze o după-amiază.", name:"Elena M.", role:"Head of Product", company:"Platformă de retail"},
+      {quote:"Au evaluat proiectul onest, inclusiv spunându-ne ce jumătate nu ne trebuia încă. Asta ne-a economisit o sumă semnificativă și a creat mai multă încredere decât ar fi putut orice ofertă.", name:"Victor C.", role:"Director general", company:"Producție"}
+    ]},
     labels: { servicesKicker:"Ce facem", servicesTitle:"Servicii", learnMore:"Află mai multe", whyTitle:"De ce Excal Group", aboutKicker:"Despre noi", moreAboutUs:"Mai multe despre noi", whatWeDoKicker:"Ce facem", capabilitiesKicker:"Capabilități", otherServicesKicker:"Alte servicii", photoPlaceholder:"Fotografia companiei", mapPlaceholder:"Fotografia sediului sau hartă" },
     why: [ {title:"O singură echipă, de la început până la final", body:"Consultanța, dezvoltarea și suportul provin de la aceeași echipă, fără informații pierdute între etape."}, {title:"Amploare adaptată problemei", body:"Dimensionăm proiectele în funcție de nevoia reală, nu de un pachet fix."}, {title:"Suport care continuă", body:"Rămânem implicați și după lansare — sistemele au nevoie de întreținere, nu doar de livrare."} ],
     how: [ {title:"Comunicare directă", body:"Lucrezi direct cu cei care execută munca, fără niveluri intermediare."}, {title:"Livrare practică", body:"Preferăm soluții care funcționează în timp, nu doar cele care sună bine într-o propunere."}, {title:"Relații pe termen lung", body:"Majoritatea proiectelor noastre continuă mult după prima etapă."} ],

@@ -6,19 +6,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#f2f2f2",
-        surface: "#cbcbcb",
-        ink: "#17201c",
-        divider: "rgba(23,32,28,0.4)",
+        bg: "rgb(var(--c-bg) / <alpha-value>)",
+        surface: "rgb(var(--c-surface) / <alpha-value>)",
+        ink: "rgb(var(--c-ink) / <alpha-value>)",
+        divider: "rgb(var(--c-divider) / var(--c-divider-alpha))",
         accent: {
-          DEFAULT: "#174d38",
-          100: "#e8f0ec",
-          200: "#c9dcd2",
-          300: "#9dc0af",
+          DEFAULT: "rgb(var(--c-accent) / <alpha-value>)",
+          100: "rgb(var(--c-accent-100) / <alpha-value>)",
+          200: "rgb(var(--c-accent-200) / <alpha-value>)",
+          300: "rgb(var(--c-accent-300) / <alpha-value>)",
           400: "#679b82",
           500: "#3c7a5d",
-          600: "#245c40",
-          700: "#174d38",
+          600: "rgb(var(--c-accent-600) / <alpha-value>)",
+          700: "rgb(var(--c-accent-700) / <alpha-value>)",
           800: "#123a2a",
           900: "#0d291e"
         },
