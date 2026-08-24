@@ -7,7 +7,6 @@ import { ChevronDown, Menu, X, Sun, Moon } from "lucide-react"
 
 const LANGS: { code: Lang; label: string }[] = [
   { code: "en", label: "EN" },
-  { code: "ru", label: "RU" },
   { code: "ro", label: "RO" },
 ]
 

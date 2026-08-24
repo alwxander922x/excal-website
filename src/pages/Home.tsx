@@ -22,68 +22,23 @@ export function Home() {
     <div>
       <SEO />
       <div className="relative overflow-hidden border-b-2 border-divider/40">
-        {/* Dynamic Aurora & Code Snippets Background (Light Theme) */}
+        {/* Aurora gradient background */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          
-          {/* Moving Aurora Orbs */}
-          <motion.div 
+          <motion.div
             animate={{ x: [0, 80, -40, 0], y: [0, -60, 80, 0], scale: [1, 1.2, 0.9, 1] }}
             transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
             className="absolute left-[10%] top-[10%] -z-10 h-[450px] w-[450px] rounded-full bg-accent opacity-15 blur-[100px] mix-blend-multiply"
           />
-          <motion.div 
+          <motion.div
             animate={{ x: [0, -100, 60, 0], y: [0, 100, -60, 0], scale: [1, 0.9, 1.15, 1] }}
             transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
             className="absolute right-[5%] bottom-[5%] -z-10 h-[550px] w-[550px] rounded-full bg-blue-400 opacity-[0.12] blur-[120px] mix-blend-multiply"
           />
-          <motion.div 
+          <motion.div
             animate={{ x: [0, 60, -80, 0], y: [0, -80, 60, 0], scale: [0.9, 1.1, 0.95, 0.9] }}
             transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
             className="absolute left-[40%] top-[30%] -z-10 h-[350px] w-[350px] rounded-full bg-purple-400 opacity-[0.12] blur-[100px] mix-blend-multiply"
           />
-
-          {/* Floating Code Snippets (Run away on hover) — hidden on mobile to avoid clutter/overlap */}
-          <div className="absolute inset-0 z-10 pointer-events-none hidden md:pointer-events-auto md:block">
-            <motion.div
-              animate={{ y: [0, -30, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ x: -150, y: -100, opacity: 0, rotate: -20, scale: 0.5 }}
-              className="absolute left-[10%] top-[20%] font-mono text-[15px] font-bold text-accent/50 cursor-default select-none p-4"
-            >
-              {`const init = () => {`}
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 40, 0] }} transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ x: 150, y: 100, opacity: 0, rotate: 20, scale: 0.5 }}
-              className="absolute right-[15%] top-[25%] font-mono text-[15px] font-bold text-blue-500/40 cursor-default select-none p-4"
-            >
-              {`<AppProvider>`}
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -20, 0] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ x: 100, y: -150, opacity: 0, rotate: 45, scale: 0.5 }}
-              className="absolute left-[40%] bottom-[20%] font-mono text-[15px] font-bold text-purple-500/40 cursor-default select-none p-4"
-            >
-              {`await fetch('/api/data')`}
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 25, 0] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ x: -100, y: 150, opacity: 0, rotate: -45, scale: 0.5 }}
-              className="absolute right-[30%] bottom-[30%] font-mono text-[15px] font-bold text-ink/30 cursor-default select-none p-4"
-            >
-              {`export default function`}
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -35, 0] }} transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ x: 200, y: 0, opacity: 0, rotate: 90, scale: 0.5 }}
-              className="absolute left-[20%] top-[60%] font-mono text-[15px] font-bold text-accent/40 cursor-default select-none p-4"
-            >
-              {`{ status: 200 }`}
-            </motion.div>
-          </div>
         </div>
 
         <section className="relative z-20 mx-auto max-w-[1200px] px-5 pb-14 pt-24 sm:px-9 md:px-[72px]">
