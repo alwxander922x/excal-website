@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link, NavLink, useNavigate } from "react-router-dom"
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom"
 import { useLanguage } from "@/context/LanguageContext"
 import { useTheme } from "@/context/ThemeContext"
 import { SERVICE_IDS, SVC, Lang } from "@/data/content"
@@ -18,19 +18,36 @@ export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const navigate = useNavigate()
+  const location = useLocation()
 
   const linkCls = ({ isActive }: { isActive: boolean }) =>
     `nav-link text-sm font-semibold ${isActive ? "active text-accent" : "text-ink"}`
 
   const mobileLinkCls = ({ isActive }: { isActive: boolean }) =>
-    `block py-3 text-base font-semibold ${isActive ? "text-accent" : "text-ink"}`
+    `block py-3 text-center text-base font-semibold ${isActive ? "text-accent" : "text-ink"}`
 
   const closeMobile = () => { setMobileOpen(false); setMobileServicesOpen(false) }
 
+  // Always returns to the homepage top — even when already on "/" scrolled down,
+  // where a plain <Link> click wouldn't trigger App's route-change scroll reset.
+  const goHome = (e: React.MouseEvent) => {
+    e.preventDefault()
+    closeMobile()
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      navigate("/")
+    }
+  }
+
   return (
     <nav className="sticky top-0 z-50 border-b-2 border-divider bg-bg px-5 py-3.5 sm:px-9 md:px-[72px]">
-      <div className="flex items-center gap-x-7">
-        <Link to="/" className="mr-auto flex items-center" onClick={closeMobile}>
+      <div className="relative flex items-center gap-x-7">
+        <Link
+          to="/"
+          onClick={goHome}
+          className="flex items-center max-md:absolute max-md:left-1/2 max-md:-translate-x-1/2 md:mr-auto"
+        >
           <img src="/logo.png" alt="Excal Group" className="h-12 dark:invert" />
         </Link>
 
@@ -91,7 +108,7 @@ export function Nav() {
           onClick={() => setMobileOpen((o) => !o)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
-          className="inline-flex items-center justify-center border border-divider p-2 text-ink md:hidden"
+          className="inline-flex items-center justify-center border border-divider p-2 text-ink max-md:ml-auto md:hidden"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -107,18 +124,18 @@ export function Nav() {
             type="button"
             onClick={() => setMobileServicesOpen((o) => !o)}
             aria-expanded={mobileServicesOpen}
-            className="flex w-full items-center justify-between py-3 text-base font-semibold text-ink"
+            className="flex w-full items-center justify-center gap-2 py-3 text-base font-semibold text-ink"
           >
             {t.nav.services}
             <ChevronDown size={16} strokeWidth={2.5} className={`transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
           </button>
           {mobileServicesOpen && (
-            <div className="mb-1 border-l-2 border-divider pl-3.5">
+            <div className="mb-1">
               {SERVICE_IDS.map((id) => (
                 <button
                   key={id}
                   onClick={() => { closeMobile(); navigate(`/services/${id}`) }}
-                  className="block w-full py-2.5 text-left text-sm text-ink/80 hover:text-accent"
+                  className="block w-full py-2.5 text-center text-sm text-ink/80 hover:text-accent"
                 >
                   {svc[id].title}
                 </button>
@@ -128,7 +145,7 @@ export function Nav() {
 
           <NavLink to="/contact" className={mobileLinkCls} onClick={closeMobile}>{t.nav.contact}</NavLink>
 
-          <div className="mt-2 flex items-center justify-between gap-1.5 border-t-2 border-divider pt-3.5">
+          <div className="mt-2 flex flex-col items-center justify-center gap-3 border-t-2 border-divider pt-3.5">
             <div className="flex gap-1.5">
               {LANGS.map((l) => (
                 <button

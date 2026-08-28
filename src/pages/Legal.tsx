@@ -7,7 +7,7 @@ export function Legal({ type }: { type: "terms" | "privacy" | "cookies" }) {
   const doc = t.legal[type]
 
   return (
-    <section className="mx-auto max-w-[840px] px-5 pb-16 pt-[72px] sm:px-9 md:px-[72px]">
+    <section className="mx-auto max-w-[840px] px-5 pb-16 pt-[72px] text-center sm:px-9 md:px-[72px] md:text-left">
       <SEO title={doc.title} url={`https://excal-group.com/${type}`} />
       <h1 className="mb-2 font-heading text-[28px] font-extrabold md:text-4xl">{doc.title}</h1>
       <p className="mb-6 text-[13px] text-ink/60">{doc.updated}</p>

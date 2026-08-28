@@ -15,7 +15,7 @@ export function Accordion({ items }: { items: { q: string; a: string }[] }) {
               type="button"
               onClick={() => setOpenIdx(isOpen ? null : i)}
               aria-expanded={isOpen}
-              className="flex w-full items-center justify-between gap-6 py-5 text-left"
+              className="flex w-full items-center justify-center gap-6 py-5 text-center md:justify-between md:text-left"
             >
               <span className="text-[16px] font-bold md:text-[18px]">{item.q}</span>
               <motion.span
@@ -35,7 +35,7 @@ export function Accordion({ items }: { items: { q: string; a: string }[] }) {
                   transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                   className="overflow-hidden"
                 >
-                  <p className="m-0 max-w-[70ch] pb-5 pr-8 text-[15px] leading-relaxed text-ink/75">{item.a}</p>
+                  <p className="mx-auto max-w-[70ch] pb-5 text-center text-[15px] leading-relaxed text-ink/75 md:mx-0 md:pr-8 md:text-left">{item.a}</p>
                 </motion.div>
               )}
             </AnimatePresence>

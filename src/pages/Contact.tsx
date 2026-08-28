@@ -15,29 +15,29 @@ export function Contact() {
   return (
     <div>
       <SEO title={t.nav.contact} url="https://excal-group.com/contact" />
-      <section className="mx-auto max-w-[1200px] px-5 pb-10 pt-[72px] sm:px-9 md:px-[72px]">
+      <section className="mx-auto max-w-[1200px] px-5 pb-10 pt-[72px] text-center sm:px-9 md:px-[72px] md:text-left">
         <h6 className="mb-2.5 text-[13px] font-extrabold uppercase tracking-wider text-accent-700">{t.nav.contact}</h6>
         <h1 className="mb-4 font-heading text-4xl font-extrabold md:text-5xl">{t.contact.title}</h1>
-        <p className="m-0 max-w-[60ch] text-base leading-relaxed text-ink/80">{t.contact.intro}</p>
+        <p className="mx-auto max-w-[60ch] text-base leading-relaxed text-ink/80 md:mx-0">{t.contact.intro}</p>
       </section>
 
       <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 pb-[72px] pt-2 sm:px-9 md:grid-cols-[5fr_7fr] md:px-[72px]">
-        <div>
-          <div className="flex gap-3 border-t-2 border-divider py-4">
+        <div className="text-center md:text-left">
+          <div className="flex flex-col items-center gap-2 border-t-2 border-divider py-4 md:flex-row md:items-start md:gap-3">
             <MapPin className="flex-none text-accent" size={20} strokeWidth={1.8} />
             <div>
               <p className="mb-1 text-xs uppercase tracking-wider text-ink/60">{t.contact.addressLabel}</p>
               <p className="m-0 text-[15px]">str. Eminescu 70, Chișinău, Moldova</p>
             </div>
           </div>
-          <div className="flex gap-3 border-t-2 border-divider py-4">
+          <div className="flex flex-col items-center gap-2 border-t-2 border-divider py-4 md:flex-row md:items-start md:gap-3">
             <Phone className="flex-none text-accent" size={20} strokeWidth={1.8} />
             <div>
               <p className="mb-1 text-xs uppercase tracking-wider text-ink/60">{t.contact.phoneLabel}</p>
               <p className="m-0 text-[15px]"><a href="tel:+37369180475" className="text-ink hover:text-accent">+373 69 180 475</a></p>
             </div>
           </div>
-          <div className="flex gap-3 border-y-2 border-divider py-4">
+          <div className="flex flex-col items-center gap-2 border-y-2 border-divider py-4 md:flex-row md:items-start md:gap-3">
             <Mail className="flex-none text-accent" size={20} strokeWidth={1.8} />
             <div>
               <p className="mb-1 text-xs uppercase tracking-wider text-ink/60">{t.contact.emailLabel}</p>
@@ -64,7 +64,7 @@ export function Contact() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="border-2 border-divider p-8"
+              className="flex flex-col items-center border-2 border-divider p-8 text-center md:items-start md:text-left"
             >
               <Check className="text-accent" size={28} strokeWidth={2} />
               <h3 className="mb-2 mt-3.5">{t.contact.sentTitle}</h3>
@@ -73,18 +73,18 @@ export function Contact() {
           ) : (
             <form
               onSubmit={(e) => { e.preventDefault(); setSent(true) }}
-              className="flex flex-col gap-4"
+              className="flex flex-col items-center gap-4 text-center md:items-stretch md:text-left"
             >
-              <div>
-                <label className="mb-1.5 block text-xs text-ink/70">{t.contact.nameLabel}</label>
+              <div className="w-full">
+                <label className="mb-1.5 block text-xs text-ink/70 md:text-left">{t.contact.nameLabel}</label>
                 <Input required />
               </div>
-              <div>
-                <label className="mb-1.5 block text-xs text-ink/70">{t.contact.emailFieldLabel}</label>
+              <div className="w-full">
+                <label className="mb-1.5 block text-xs text-ink/70 md:text-left">{t.contact.emailFieldLabel}</label>
                 <Input type="email" required />
               </div>
-              <div>
-                <label className="mb-1.5 block text-xs text-ink/70">{t.contact.messageLabel}</label>
+              <div className="w-full">
+                <label className="mb-1.5 block text-xs text-ink/70 md:text-left">{t.contact.messageLabel}</label>
                 <Textarea rows={5} required />
               </div>
               <Button type="submit" size="block">{t.contact.submit}</Button>

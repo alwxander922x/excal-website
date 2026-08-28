@@ -9,8 +9,8 @@ export function Footer() {
 
   return (
     <footer className="mt-6 border-t-2 border-divider">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-5 py-14 sm:px-9 md:grid-cols-4 md:px-[72px]">
-        <div>
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-5 py-14 text-center sm:px-9 md:grid-cols-4 md:px-[72px] md:text-left">
+        <div className="flex flex-col items-center md:items-start">
           <img src="/logo.png" alt="Excal Group" className="mb-3.5 h-8 dark:invert" />
           <p className="max-w-[30ch] text-[13.5px] leading-relaxed text-ink/70">{t.footer.blurb}</p>
         </div>
@@ -36,7 +36,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t-2 border-divider">
-        <div className="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-2 px-5 py-[18px] text-xs text-ink/60 sm:px-9 md:px-[72px]">
+        <div className="mx-auto flex max-w-[1200px] flex-col flex-wrap items-center justify-between gap-2 px-5 py-[18px] text-center text-xs text-ink/60 sm:px-9 md:flex-row md:px-[72px] md:text-left">
           <span>© {year} Excal Group. {t.footer.rights}</span>
           <span>office@excal-group.com — +373 69 180 475</span>
         </div>

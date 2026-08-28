@@ -25,10 +25,10 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
             transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             className="m-0"
           >
-            <p className="m-0 mb-7 max-w-[64ch] text-[17px] leading-relaxed text-ink/85 md:text-[19px]">
+            <p className="mx-auto mb-7 max-w-[64ch] text-center text-[17px] leading-relaxed text-ink/85 md:mx-0 md:text-left md:text-[19px]">
               &ldquo;{current.quote}&rdquo;
             </p>
-            <footer className="text-[13px] uppercase tracking-wider">
+            <footer className="text-center text-[13px] uppercase tracking-wider md:text-left">
               <span className="font-extrabold text-ink">{current.name}</span>
               <span className="text-ink/60"> &mdash; {current.role}, {current.company}</span>
             </footer>
@@ -36,7 +36,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
         </AnimatePresence>
       </div>
 
-      <div className="mt-8 flex items-center gap-3">
+      <div className="mt-8 flex items-center justify-center gap-3 md:justify-start">
         <button
           type="button"
           onClick={() => go(-1)}
