@@ -41,7 +41,7 @@ export function Legal({ type }: { type: "terms" | "privacy" | "cookies" }) {
       {/* Compliance Badge */}
       <div className="mb-4 inline-flex items-center gap-1.5 border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-mono font-bold uppercase tracking-wider text-accent">
         <ShieldCheck className="h-3.5 w-3.5" />
-        <span>GDPR (EU 2016/679) & RM Law No. 133/2011</span>
+        <span>GDPR (EU 2016/679) & RM Law No. 195/2024</span>
       </div>
 
       {/* Title & Metadata */}

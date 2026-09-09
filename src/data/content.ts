@@ -113,9 +113,9 @@ export const T: Record<Lang, SiteCopy> = {
     cta: { title:"Let's talk about your project.", button:"Contact us" },
     footer: { blurb:"IT consulting, software development and outsourced technology operations.", servicesLabel:"Services", quickLinks:"Company", legalLabel:"Legal", rights:"All rights reserved." },
     cookieBanner: {
-      badge: "GDPR & RM 133",
+      badge: "GDPR & RM 195",
       title: "Data Protection & Cookies",
-      text: "We use cookies and telemetry to ensure secure operations, remember your language preferences, and analyse site traffic in compliance with EU GDPR (2016/679) and Moldovan Law No. 133/2011. See our",
+      text: "We use cookies and telemetry to ensure secure operations, remember your language preferences, and analyse site traffic in compliance with EU GDPR (2016/679) and Moldovan Law No. 195/2024. See our",
       accept: "Accept all",
       essential: "Essential only",
       decline: "Decline"
@@ -152,7 +152,7 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "7. Data Protection & Privacy Compliance",
-            body: "We process personal data in strict compliance with the General Data Protection Regulation (Regulation (EU) 2016/679 - GDPR) and Law of the Republic of Moldova No. 133/2011 on the Protection of Personal Data. For complete details regarding our data collection, processing, security practices, and your statutory rights, please review our Privacy Policy and Cookie Policy.\n\nFor enterprise clients where Excal Group processes personal data on their behalf (e.g. managed hosting, infrastructure administration, portal maintenance), we execute a comprehensive Data Processing Addendum (DPA) incorporating standard contractual clauses."
+            body: "We process personal data in strict compliance with the General Data Protection Regulation (Regulation (EU) 2016/679 - GDPR) and Law of the Republic of Moldova No. 195/2024 on the Protection of Personal Data. For complete details regarding our data collection, processing, security practices, and your statutory rights, please review our Privacy Policy and Cookie Policy.\n\nFor enterprise clients where Excal Group processes personal data on their behalf (e.g. managed hosting, infrastructure administration, portal maintenance), we execute a comprehensive Data Processing Addendum (DPA) incorporating standard contractual clauses."
           },
           {
             h: "8. Governing Law & Dispute Resolution",
@@ -167,11 +167,11 @@ export const T: Record<Lang, SiteCopy> = {
       privacy: {
         title: "Privacy Policy",
         updated: "Last updated: September 2026",
-        intro: "Excal Group is dedicated to safeguarding your privacy and ensuring the security of your personal data. This Privacy Policy details how we collect, process, store, and protect personal information when you access our website, communicate with our teams, or evaluate our IT services, in full alignment with Regulation (EU) 2016/679 (GDPR) and Law of the Republic of Moldova No. 133/2011 on Personal Data Protection.",
+        intro: "Excal Group is dedicated to safeguarding your privacy and ensuring the security of your personal data. This Privacy Policy details how we collect, process, store, and protect personal information when you access our website, communicate with our teams, or evaluate our IT services, in full alignment with Regulation (EU) 2016/679 (GDPR) and Law of the Republic of Moldova No. 195/2024 on Personal Data Protection.",
         sections: [
           {
             h: "1. Data Controller & Legal Framework",
-            body: "The Data Controller responsible for the processing of your personal data on this website is:\nExcal Group\nChișinău, Republic of Moldova\nEmail: office@excal-group.com | Telephone: +373 69 180 475\n\nWe process personal data in strict compliance with:\n• Law of the Republic of Moldova No. 133 of 08.07.2011 on the Protection of Personal Data;\n• Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation - GDPR);\n• Applicable national and international standards for IT security and electronic communications."
+            body: "The Data Controller responsible for the processing of your personal data on this website is:\nExcal Group\nChișinău, Republic of Moldova\nEmail: office@excal-group.com | Telephone: +373 69 180 475\n\nWe process personal data in strict compliance with:\n• Law of the Republic of Moldova No. 195 of 25.07.2024 (in force since 23 August 2024) on the Protection of Personal Data;\n• Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation - GDPR);\n• Applicable national and international standards for IT security and electronic communications."
           },
           {
             h: "2. Categories of Personal Data We Collect",
@@ -179,7 +179,7 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "3. Purposes & Legal Grounds for Processing",
-            body: "We process your personal data on the following lawful bases pursuant to Art. 6 GDPR and Art. 5 of Law No. 133/2011:\n\n• Pre-Contractual & Contractual Performance (Art. 6(1)(b) GDPR / Art. 5(1) Law 133): Processing inquiries, scoping requirements, preparing architectural proposals, and executing B2B service contracts;\n• Legitimate Business Interests (Art. 6(1)(f) GDPR): Safeguarding our network infrastructure against cyber threats, monitoring application performance, preventing fraud, and optimizing user experience;\n• Legal Compliance (Art. 6(1)(c) GDPR): Fulfilling statutory accounting, tax, archive, and regulatory obligations under Moldovan law;\n• Consent (Art. 6(1)(a) GDPR): Non-essential analytical telemetry or direct marketing communication where explicit consent was given."
+            body: "We process your personal data on the following lawful bases pursuant to Art. 6 GDPR and Art. 5 of Law No. 195/2024:\n\n• Pre-Contractual & Contractual Performance (Art. 6(1)(b) GDPR / Art. 5(1) Law 195): Processing inquiries, scoping requirements, preparing architectural proposals, and executing B2B service contracts;\n• Legitimate Business Interests (Art. 6(1)(f) GDPR): Safeguarding our network infrastructure against cyber threats, monitoring application performance, preventing fraud, and optimizing user experience;\n• Legal Compliance (Art. 6(1)(c) GDPR): Fulfilling statutory accounting, tax, archive, and regulatory obligations under Moldovan law;\n• Consent (Art. 6(1)(a) GDPR): Non-essential analytical telemetry or direct marketing communication where explicit consent was given."
           },
           {
             h: "4. Technical & Organizational Security Measures (TOMs)",
@@ -187,14 +187,14 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "5. Third-Party Disclosures & International Transfers",
-            body: "We never sell, rent, trade, or commercially monetize your personal data. We only share personal data with trusted third parties under strict confidentiality agreements:\n\n• Infrastructure & Hosting Providers: Reliable European and international cloud hosting providers operating ISO/IEC 27001 and SOC 2 certified data centers;\n• Legal & Regulatory Authorities: Competent state authorities, tax agencies, or judicial bodies when strictly mandated by applicable law;\n• Professional Advisors: Certified accountants, auditors, and legal counsel operating under professional secrecy obligations.\n\nWhen data is transferred across borders, we ensure adequate safeguards are in place, including Standard Contractual Clauses (SCC) approved by the European Commission and compliance with Chapter IV of Moldovan Law No. 133/2011."
+            body: "We never sell, rent, trade, or commercially monetize your personal data. We only share personal data with trusted third parties under strict confidentiality agreements:\n\n• Infrastructure & Hosting Providers: Reliable European and international cloud hosting providers operating ISO/IEC 27001 and SOC 2 certified data centers;\n• Legal & Regulatory Authorities: Competent state authorities, tax agencies, or judicial bodies when strictly mandated by applicable law;\n• Professional Advisors: Certified accountants, auditors, and legal counsel operating under professional secrecy obligations.\n\nWhen data is transferred across borders, we ensure adequate safeguards are in place, including Standard Contractual Clauses (SCC) approved by the European Commission and compliance with Chapter IV of Moldovan Law No. 195/2024."
           },
           {
             h: "6. Data Retention Schedule",
             body: "We retain personal data only for as long as necessary to fulfill the purposes for which it was collected:\n\n• Inquiries and commercial requests: Retained for the duration of the communication or active client relationship, and up to 3 years following the last interaction;\n• Contractual, billing, and accounting records: Retained for 5 to 10 years as mandated by Moldovan fiscal, commercial, and accounting statutes;\n• Technical server logs: Retained for 30 to 90 days for security and forensic audits, after which they are permanently deleted or anonymized."
           },
           {
-            h: "7. Your Rights Under GDPR & Law No. 133/2011",
+            h: "7. Your Rights Under GDPR & Law No. 195/2024",
             body: "As a data subject, you hold comprehensive rights regarding your personal information:\n\n• Right of Access: Obtain confirmation of whether your data is being processed and receive a copy of your personal data;\n• Right to Rectification: Request the prompt correction of inaccurate or incomplete data;\n• Right to Erasure (\"Right to be Forgotten\"): Request deletion of your personal data where retention is no longer justified by law;\n• Right to Restriction: Limit processing under specific legal conditions;\n• Right to Data Portability: Receive your personal data in a structured, commonly used, and machine-readable format;\n• Right to Object: Object to processing based on legitimate interests or direct marketing;\n• Right to Withdraw Consent: Withdraw consent at any time without affecting the lawfulness of processing prior to withdrawal;\n• Right to Lodge a Complaint: Lodge a complaint with the National Center for Personal Data Protection of the Republic of Moldova (CNPDCP — Centrul Național pentru Protecția Datelor cu Caracter Personal, www.datepersonale.md) or your local EU supervisory authority."
           },
           {
@@ -206,7 +206,7 @@ export const T: Record<Lang, SiteCopy> = {
       cookies: {
         title: "Cookie Policy",
         updated: "Last updated: September 2026",
-        intro: "This Cookie Policy explains what cookies, web beacons, and local storage technologies are, how Excal Group uses them on our website, and how you can control your preferences. We believe in minimal data footprint, maximum transparency, and full compliance with the EU ePrivacy Directive, GDPR, and Moldovan Law No. 133/2011.",
+        intro: "This Cookie Policy explains what cookies, web beacons, and local storage technologies are, how Excal Group uses them on our website, and how you can control your preferences. We believe in minimal data footprint, maximum transparency, and full compliance with the EU ePrivacy Directive, GDPR, and Moldovan Law No. 195/2024.",
         sections: [
           {
             h: "1. What Are Cookies & Web Storage",
@@ -268,9 +268,9 @@ export const T: Record<Lang, SiteCopy> = {
     cta: { title:"Расскажите нам о своём проекте.", button:"Связаться с нами" },
     footer: { blurb:"ИТ-консалтинг, разработка программного обеспечения и аутсорсинг технологических операций.", servicesLabel:"Услуги", quickLinks:"Компания", legalLabel:"Правовая информация", rights:"Все права защищены." },
     cookieBanner: {
-      badge: "GDPR & Закон РМ № 133",
+      badge: "GDPR & Закон РМ № 195/2024",
       title: "Защита данных и файлы Cookie",
-      text: "Мы используем файлы cookie для корректной работы сайта, сохранения языковых предпочтений и анализа посещаемости в соответствии с Законом РМ № 133/2011 и стандартом GDPR ЕС (2016/679). Подробнее в нашей",
+      text: "Мы используем файлы cookie для корректной работы сайта, сохранения языковых предпочтений и анализа посещаемости в соответствии с Законом РМ № 195/2024 и стандартом GDPR ЕС (2016/679). Подробнее в нашей",
       accept: "Принять все",
       essential: "Только обязательные",
       decline: "Отклонить"
@@ -306,8 +306,8 @@ export const T: Record<Lang, SiteCopy> = {
             body: "Веб-сайт и опубликованные материалы предоставляются на условиях «как есть» (as is) и «по мере доступности» (as available) без каких-либо явных или подразумеваемых гарантий, включая гарантии коммерческой применимости, пригодности для конкретной цели и отсутствия нарушений.\n\nВ максимально допустимой законом степени Excal Group, её руководители, сотрудники и подрядчики не несут ответственности за любые косвенные, случайные, специальные или штрафные убытки — включая упущенную выгоду, потерю данных, ущерб деловой репутации или простой в деятельности, — возникшие в связи с использованием либо невозможностью использования данного сайта.\n\nПределы ответственности и средства правовой защиты в рамках коммерческих ИТ-проектов регулируются исключительно подписанным двусторонним договором с клиентом."
           },
           {
-            h: "7. Защита данных и соответствие GDPR и Закону № 133/2011",
-            body: "Обработка персональных данных осуществляется в строгом соответствии с Общим регламентом по защите данных Европейского Союза (GDPR 2016/679) и Законом Республики Молдова № 133 от 08.07.2011 «О защите персональных данных». Подробности изложены в нашей Политике конфиденциальности и Политике использования файлов cookie.\n\nПри оказании услуг клиентам, где Excal Group выступает обработчиком персональных данных (хостинг, администрирование инфраструктуры, поддержка порталов), мы заключаем соглашение об обработке данных (DPA), включающее стандартные договорные условия ЕС (SCC)."
+            h: "7. Защита данных и соответствие GDPR и Закону № 195/2024",
+            body: "Обработка персональных данных осуществляется в строгом соответствии с Общим регламентом по защите данных Европейского Союза (GDPR 2016/679) и Законом Республики Молдова № 195 от 25.07.2024 (вступил в силу 23 августа 2024 г.) «О защите персональных данных». Подробности изложены в нашей Политике конфиденциальности и Политике использования файлов cookie.\n\nПри оказании услуг клиентам, где Excal Group выступает обработчиком персональных данных (хостинг, администрирование инфраструктуры, поддержка порталов), мы заключаем соглашение об обработке данных (DPA), включающее стандартные договорные условия ЕС (SCC)."
           },
           {
             h: "8. Применимое право и разрешение споров",
@@ -322,11 +322,11 @@ export const T: Record<Lang, SiteCopy> = {
       privacy: {
         title: "Политика конфиденциальности",
         updated: "Последнее обновление: сентябрь 2026",
-        intro: "Excal Group гарантирует надёжную защиту вашей конфиденциальности и персональных данных. Настоящая Политика разъясняет порядок сбора, обработки, хранения и защиты информации при посещении нашего сайта, обращении к нашим инженерам и оценке ИТ-услуг в полном соответствии с Регламентом (ЕС) 2016/679 (GDPR) и Законом Республики Молдова № 133/2011 «О защите персональных данных».",
+        intro: "Excal Group гарантирует надёжную защиту вашей конфиденциальности и персональных данных. Настоящая Политика разъясняет порядок сбора, обработки, хранения и защиты информации при посещении нашего сайта, обращении к нашим инженерам и оценке ИТ-услуг в полном соответствии с Регламентом (ЕС) 2016/679 (GDPR) и Законом Республики Молдова № 195/2024 «О защите персональных данных».",
         sections: [
           {
             h: "1. Оператор персональных данных и правовые основания",
-            body: "Оператором персональных данных при использовании данного веб-сайта является:\nExcal Group\nг. Кишинёв, Республика Молдова\nEmail: office@excal-group.com | Телефон: +373 69 180 475\n\nМы обрабатываем персональные данные в строгом соответствии с:\n• Законом Республики Молдова № 133 от 08.07.2011 «О защите персональных данных»;\n• Регламентом Европейского Парламента и Совета (ЕС) 2016/679 (GDPR);\n• Применимыми государственными и международными стандартами безопасности информации."
+            body: "Оператором персональных данных при использовании данного веб-сайта является:\nExcal Group\nг. Кишинёв, Республика Молдова\nEmail: office@excal-group.com | Телефон: +373 69 180 475\n\nМы обрабатываем персональные данные в строгом соответствии с:\n• Законом Республики Молдова № 195 от 25.07.2024 (вступил в силу 23 августа 2024 г.) «О защите персональных данных»;\n• Регламентом Европейского Парламента и Совета (ЕС) 2016/679 (GDPR);\n• Применимыми государственными и международными стандартами безопасности информации."
           },
           {
             h: "2. Категории собираемых персональных данных",
@@ -334,7 +334,7 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "3. Цели и правовые основания обработки",
-            body: "Обработка данных осуществляется на законных основаниях согласно ст. 6 GDPR и ст. 5 Закона РМ № 133/2011:\n\n• Преддоговорные действия и исполнение договора (ст. 6(1)(b) GDPR / ст. 5(1) Закона 133): обработка входящих заявок, оценка проектных требований, подготовка коммерческих и архитектурных предложений, заключение и сопровождение B2B-контрактов;\n• Законные интересы компании (ст. 6(1)(f) GDPR): защита серверной инфраструктуры от кибератак, диагностика стабильности сети, предотвращение мошенничества и оптимизация работы сайта;\n• Исполнение правовых обязанностей (ст. 6(1)(c) GDPR): соблюдение требований налогового, бухгалтерского и архивного законодательства Республики Молдова;\n• Согласие пользователя (ст. 6(1)(a) GDPR): обработка необязательных аналитических данных при предоставлении явного согласия."
+            body: "Обработка данных осуществляется на законных основаниях согласно ст. 6 GDPR и ст. 5 Закона РМ № 195/2024:\n\n• Преддоговорные действия и исполнение договора (ст. 6(1)(b) GDPR / ст. 5(1) Закона 195): обработка входящих заявок, оценка проектных требований, подготовка коммерческих и архитектурных предложений, заключение и сопровождение B2B-контрактов;\n• Законные интересы компании (ст. 6(1)(f) GDPR): защита серверной инфраструктуры от кибератак, диагностика стабильности сети, предотвращение мошенничества и оптимизация работы сайта;\n• Исполнение правовых обязанностей (ст. 6(1)(c) GDPR): соблюдение требований налогового, бухгалтерского и архивного законодательства Республики Молдова;\n• Согласие пользователя (ст. 6(1)(a) GDPR): обработка необязательных аналитических данных при предоставлении явного согласия."
           },
           {
             h: "4. Технические и организационные меры безопасности (ТОМ)",
@@ -342,14 +342,14 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "5. Передача данных третьим лицам и трансграничная передача",
-            body: "Мы никогда не продаём, не сдаём в аренду и не передаём ваши персональные данные третьим лицам в маркетинговых целях. Доступ к данным может предоставляться исключительно проверенным партнёрам:\n\n• Хостинг-провайдеры: надёжные европейские облачные центры обработки данных, сертифицированные по ISO/IEC 27001 и SOC 2;\n• Государственные органы: уполномоченные государственные инстанции при наличии официальных законных требований;\n• Профессиональные консультанты: сертифицированные аудиторы, бухгалтеры и юридические консультанты, связанные профессиональной тайной.\n\nПри трансграничной передаче данных соблюдаются требования Главы V GDPR (Стандартные договорные условия — SCC) и Главы IV Закона РМ № 133/2011."
+            body: "Мы никогда не продаём, не сдаём в аренду и не передаём ваши персональные данные третьим лицам в маркетинговых целях. Доступ к данным может предоставляться исключительно проверенным партнёрам:\n\n• Хостинг-провайдеры: надёжные европейские облачные центры обработки данных, сертифицированные по ISO/IEC 27001 и SOC 2;\n• Государственные органы: уполномоченные государственные инстанции при наличии официальных законных требований;\n• Профессиональные консультанты: сертифицированные аудиторы, бухгалтеры и юридические консультанты, связанные профессиональной тайной.\n\nПри трансграничной передаче данных соблюдаются требования Главы V GDPR (Стандартные договорные условия — SCC) и Главы IV Закона РМ № 195/2024."
           },
           {
             h: "6. Сроки хранения персональных данных",
             body: "Персональные данные хранятся только в течение срока, необходимого для достижения целей обработки:\n\n• Запросы и преддоговорная переписка: хранятся в течение срока взаимодействия и до 3 лет после последнего контакта;\n• Договорная, бухгалтерская и финансовая документация: хранится от 5 до 10 лет в соответствии с требованиями законодательства Республики Молдова;\n• Технические серверные логи: хранятся от 30 до 90 дней для обеспечения безопасности, после чего автоматически уничтожаются или обезличиваются."
           },
           {
-            h: "7. Права субъектов данных (GDPR и Закон РМ № 133/2011)",
+            h: "7. Права субъектов данных (GDPR и Закон РМ № 195/2024)",
             body: "В соответствии с законодательством вы обладаете следующими правами:\n\n• Право на доступ: подтверждение факта обработки и получение копии имеющихся данных;\n• Право на исправление: исправление неточных или неполных сведений;\n• Право на удаление («право на забвение»): уничтожение данных, если их хранение более не требуется законом;\n• Право на ограничение обработки: временная приостановка обработки при определённых условиях;\n• Право на переносимость данных: получение данных в структурированном машиночитаемом формате;\n• Право на возражение: возражение против обработки данных на основании законных интересов;\n• Право на отзыв согласия: отзыв ранее данного согласия в любой момент;\n• Право на подачу жалобы: обращение в Национальный центр по защите персональных данных Республики Молдова (CNPDCP — Centrul Național pentru Protecția Datelor cu Caracter Personal, www.datepersonale.md) либо в уполномоченный надзорный орган ЕС."
           },
           {
@@ -361,7 +361,7 @@ export const T: Record<Lang, SiteCopy> = {
       cookies: {
         title: "Политика использования файлов cookie",
         updated: "Последнее обновление: сентябрь 2026",
-        intro: "Настоящая Политика использования файлов cookie объясняет, что такое файлы cookie и технологии веб-хранилища, как Excal Group использует их на сайте и как вы можете управлять своими настройками. Мы придерживаемся принципов прозрачности и полного соблюдения Директивы ЕС ePrivacy, регламента GDPR и Закона РМ № 133/2011.",
+        intro: "Настоящая Политика использования файлов cookie объясняет, что такое файлы cookie и технологии веб-хранилища, как Excal Group использует их на сайте и как вы можете управлять своими настройками. Мы придерживаемся принципов прозрачности и полного соблюдения Директивы ЕС ePrivacy, регламента GDPR и Закона РМ № 195/2024.",
         sections: [
           {
             h: "1. Что такое файлы cookie и локальное хранилище",
@@ -423,9 +423,9 @@ export const T: Record<Lang, SiteCopy> = {
     cta: { title:"Povestește-ne despre proiectul tău.", button:"Contactează-ne" },
     footer: { blurb:"Consultanță IT, dezvoltare de software și externalizarea operațiunilor tehnologice.", servicesLabel:"Servicii", quickLinks:"Companie", legalLabel:"Legal", rights:"Toate drepturile rezervate." },
     cookieBanner: {
-      badge: "GDPR & Legea RM nr. 133",
+      badge: "GDPR & Legea RM nr. 195/2024",
       title: "Protecția datelor și fișiere Cookie",
-      text: "Utilizăm fișiere cookie pentru funcționarea corectă a site-ului, reținerea preferințelor de limbă și analiza traficului conform Legii RM nr. 133/2011 și GDPR UE (2016/679). Consultați",
+      text: "Utilizăm fișiere cookie pentru funcționarea corectă a site-ului, reținerea preferințelor de limbă și analiza traficului conform Legii RM nr. 195/2024 și GDPR UE (2016/679). Consultați",
       accept: "Acceptă tot",
       essential: "Doar necesare",
       decline: "Refuz"
@@ -461,8 +461,8 @@ export const T: Record<Lang, SiteCopy> = {
             body: "Site-ul web și materialele conținute sunt puse la dispoziție pe baza principiului «așa cum sunt» (as is) și «în măsura disponibilității» (as available), fără garanții exprese sau implicite de niciun fel, inclusiv garanții de vandabilitate, adecvare la un scop specific sau neîncălcare a drepturilor terților.\n\nÎn măsura maximă permisă de legea aplicabilă, Excal Group, administratorii, angajații și subcontractanții săi nu vor fi răspunzători pentru niciun fel de daune indirecte, incidentale, speciale sau punitive — inclusiv pierderi de profit, întreruperea activității comerciale, pierderi de date sau daune aduse reputației — rezultate din accesarea sau imposibilitatea de accesare a site-ului.\n\nRăspunderea în cadrul proiectelor IT comerciale este reglementată exclusiv de clauzele contractuale din acordul semnat între părți."
           },
           {
-            h: "7. Protecția datelor (GDPR și Legea RM nr. 133/2011)",
-            body: "Prelucrarea datelor cu caracter personal se realizează în strictă conformitate cu Regulamentul General privind Protecția Datelor (GDPR - Regulamentul UE 2016/679) și Legea Republicii Moldova nr. 133/2011 privind protecția datelor cu caracter personal. Detaliile complete sunt disponibile în Politica de confidențialitate și Politica privind cookie-urile.\n\nPentru clienții la care Excal Group prelucrează date în calitate de persoană împuternicită (hosting administrat, administrare infrastructură, mentenanță portaluri), încheiem un Acord de prelucrare a datelor (DPA) ce include clauzele contractuale standard ale UE (SCC)."
+            h: "7. Protecția datelor (GDPR și Legea RM nr. 195/2024)",
+            body: "Prelucrarea datelor cu caracter personal se realizează în strictă conformitate cu Regulamentul General privind Protecția Datelor (GDPR - Regulamentul UE 2016/679) și Legea Republicii Moldova nr. 195/2024 privind protecția datelor cu caracter personal. Detaliile complete sunt disponibile în Politica de confidențialitate și Politica privind cookie-urile.\n\nPentru clienții la care Excal Group prelucrează date în calitate de persoană împuternicită (hosting administrat, administrare infrastructură, mentenanță portaluri), încheiem un Acord de prelucrare a datelor (DPA) ce include clauzele contractuale standard ale UE (SCC)."
           },
           {
             h: "8. Legea aplicabilă și soluționarea litigiilor",
@@ -477,11 +477,11 @@ export const T: Record<Lang, SiteCopy> = {
       privacy: {
         title: "Politica de confidențialitate",
         updated: "Ultima actualizare: septembrie 2026",
-        intro: "Excal Group este pe deplin angajată în protejarea vieții private și a securității datelor dumneavoastră cu caracter personal. Prezenta Politică explică modul în care colectăm, prelucrăm, stocăm și protejăm datele cu caracter personal atunci când accesați site-ul nostru, contactați echipele noastre tehnice sau evaluați serviciile noastre IT, în deplină conformitate cu Regulamentul (UE) 2016/679 (GDPR) și Legea Republicii Moldova nr. 133/2011 privind protecția datelor cu caracter personal.",
+        intro: "Excal Group este pe deplin angajată în protejarea vieții private și a securității datelor dumneavoastră cu caracter personal. Prezenta Politică explică modul în care colectăm, prelucrăm, stocăm și protejăm datele cu caracter personal atunci când accesați site-ul nostru, contactați echipele noastre tehnice sau evaluați serviciile noastre IT, în deplină conformitate cu Regulamentul (UE) 2016/679 (GDPR) și Legea Republicii Moldova nr. 195/2024 privind protecția datelor cu caracter personal.",
         sections: [
           {
             h: "1. Operatorul de date și cadrul legislativ",
-            body: "Operatorul responsabil pentru prelucrarea datelor dumneavoastră cu caracter personal pe acest site este:\nExcal Group\nChișinău, Republica Moldova\nEmail: office@excal-group.com | Telefon: +373 69 180 475\n\nPrelucrăm datele cu caracter personal în strictă conformitate cu:\n• Legea Republicii Moldova nr. 133 din 08.07.2011 privind protecția datelor cu caracter personal;\n• Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului (GDPR);\n• Standardele tehnice aplicabile în domeniul securității rețelelor și al comunicațiilor electronice."
+            body: "Operatorul responsabil pentru prelucrarea datelor dumneavoastră cu caracter personal pe acest site este:\nExcal Group\nChișinău, Republica Moldova\nEmail: office@excal-group.com | Telefon: +373 69 180 475\n\nPrelucrăm datele cu caracter personal în strictă conformitate cu:\n• Legea Republicii Moldova nr. 195 din 25.07.2024 (în vigoare din 23 august 2024) privind protecția datelor cu caracter personal;\n• Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului (GDPR);\n• Standardele tehnice aplicabile în domeniul securității rețelelor și al comunicațiilor electronice."
           },
           {
             h: "2. Categoriile de date cu caracter personal colectate",
@@ -489,7 +489,7 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "3. Scopurile și temeiurile legale ale prelucrării",
-            body: "Prelucrarea se bazează pe temeiurile legitime stabilite de art. 6 GDPR și art. 5 din Legea RM nr. 133/2011:\n\n• Măsuri precontractuale și executarea contractului (art. 6(1)(b) GDPR / art. 5(1) Legea 133): preluarea solicitărilor de ofertă, dimensionarea tehnică, pregătirea propunerilor de arhitectură software și derularea contractelor comerciale;\n• Interesul legitim al companiei (art. 6(1)(f) GDPR): protejarea infrastructurii serverelor împotriva amenințărilor cibernetice, monitorizarea disponibilității sistemelor și îmbunătățirea experienței utilizatorilor;\n• Îndeplinirea unor obligații legale (art. 6(1)(c) GDPR): conformitatea cu normele fiscale, contabile și de arhivare aplicabile în Republica Moldova;\n• Consimțământul exprimat (art. 6(1)(a) GDPR): în cazul activării analizelor tehnice neesențiale de audiență."
+            body: "Prelucrarea se bazează pe temeiurile legitime stabilite de art. 6 GDPR și art. 5 din Legea RM nr. 195/2024:\n\n• Măsuri precontractuale și executarea contractului (art. 6(1)(b) GDPR / art. 5(1) Legea 195): preluarea solicitărilor de ofertă, dimensionarea tehnică, pregătirea propunerilor de arhitectură software și derularea contractelor comerciale;\n• Interesul legitim al companiei (art. 6(1)(f) GDPR): protejarea infrastructurii serverelor împotriva amenințărilor cibernetice, monitorizarea disponibilității sistemelor și îmbunătățirea experienței utilizatorilor;\n• Îndeplinirea unor obligații legale (art. 6(1)(c) GDPR): conformitatea cu normele fiscale, contabile și de arhivare aplicabile în Republica Moldova;\n• Consimțământul exprimat (art. 6(1)(a) GDPR): în cazul activării analizelor tehnice neesențiale de audiență."
           },
           {
             h: "4. Măsuri tehnice și organizatorice de securitate (TOM)",
@@ -497,14 +497,14 @@ export const T: Record<Lang, SiteCopy> = {
           },
           {
             h: "5. Partajarea datelor și transferurile internaționale",
-            body: "Nu comercializăm, nu închiriem și nu transferăm datele dumneavoastră personale către terți în scopuri comerciale sau de publicitate. Datele pot fi comunicate doar partenerilor de încredere:\n\n• Furnizori de infrastructură cloud: centre de date securizate situate pe teritoriul Uniunii Europene, certificate ISO/IEC 27001 și SOC 2;\n• Autorități publice competente: organe fiscale sau judiciare, strict în condițiile stabilite imperativ de legislație;\n• Consultanți profesionali: experți contabili, auditori sau consilieri juridici supuși secretului profesional.\n\nTransferurile internaționale de date se realizează cu respectarea Capitolului V din GDPR (Clauze Contractuale Standard — SCC) și a Capitolului IV din Legea RM nr. 133/2011."
+            body: "Nu comercializăm, nu închiriem și nu transferăm datele dumneavoastră personale către terți în scopuri comerciale sau de publicitate. Datele pot fi comunicate doar partenerilor de încredere:\n\n• Furnizori de infrastructură cloud: centre de date securizate situate pe teritoriul Uniunii Europene, certificate ISO/IEC 27001 și SOC 2;\n• Autorități publice competente: organe fiscale sau judiciare, strict în condițiile stabilite imperativ de legislație;\n• Consultanți profesionali: experți contabili, auditori sau consilieri juridici supuși secretului profesional.\n\nTransferurile internaționale de date se realizează cu respectarea Capitolului V din GDPR (Clauze Contractuale Standard — SCC) și a Capitolului IV din Legea RM nr. 195/2024."
           },
           {
             h: "6. Perioada de păstrare a datelor",
             body: "Datele cu caracter personal sunt păstrate doar pe perioada necesară atingerii scopurilor pentru care au fost colectate:\n\n• Solicitări de informații și corespondență precontractuală: păstrate pe durata comunicării active și până la 3 ani de la ultimul contact;\n• Documente contractuale și financiar-contabile: păstrate între 5 și 10 ani conform cerințelor legislației fiscale și de arhivare a Republicii Moldova;\n• Jurnale tehnice de server (logs): păstrate între 30 și 90 de zile în scopuri de audit de securitate, după care sunt șterse ireversibil sau anonimizate."
           },
           {
-            h: "7. Drepturile dumneavoastră (GDPR și Legea nr. 133/2011)",
+            h: "7. Drepturile dumneavoastră (GDPR și Legea nr. 195/2024)",
             body: "În calitate de persoană vizată, beneficiați de drepturile garantate de lege:\n\n• Dreptul de acces: obținerea confirmării prelucrării și a unei copii a datelor personale deținute;\n• Dreptul la rectificare: corectarea promptă a datelor inexacte sau completarea celor lacunare;\n• Dreptul la ștergere («dreptul de a fi uitat»): ștergerea datelor atunci când prelucrarea nu mai este necesară prin lege;\n• Dreptul la restricționarea prelucrării: limitarea prelucrării în condițiile legii;\n• Dreptul la portabilitatea datelor: primirea datelor într-un format structurat, utilizat în mod curent și lizibil automat;\n• Dreptul la opoziție: opoziția față de prelucrarea întemeiată pe interese legitime;\n• Dreptul de retragere a consimțământului: oricând, fără a afecta legalitatea prelucrării anterioare;\n• Dreptul de a depune plângere: adresarea unei plângeri la Centrul Național pentru Protecția Datelor cu Caracter Personal din Republica Moldova (CNPDCP — www.datepersonale.md) sau la autoritatea de supraveghere competentă din statul membru UE."
           },
           {
@@ -516,7 +516,7 @@ export const T: Record<Lang, SiteCopy> = {
       cookies: {
         title: "Politica privind cookie-urile",
         updated: "Ultima actualizare: septembrie 2026",
-        intro: "Prezenta Politică privind cookie-urile explică ce sunt tehnologiile de tip cookie și stocare locală, modul în care Excal Group le folosește pe site și opțiunile dumneavoastră de gestionare. Respectăm viața privată a utilizatorilor, conformându-ne Directivei ePrivacy a UE, GDPR și Legii RM nr. 133/2011.",
+        intro: "Prezenta Politică privind cookie-urile explică ce sunt tehnologiile de tip cookie și stocare locală, modul în care Excal Group le folosește pe site și opțiunile dumneavoastră de gestionare. Respectăm viața privată a utilizatorilor, conformându-ne Directivei ePrivacy a UE, GDPR și Legii RM nr. 195/2024.",
         sections: [
           {
             h: "1. Ce sunt cookie-urile și stocarea locală",
